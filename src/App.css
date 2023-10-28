@@ -1,38 +1,138 @@
-.App {
-  text-align: center;
+
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+    
+}
+ 
+
+
+body{
+    background-color: black;
+    
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.logo{
+    font-family: "Black Ops One", cursive;
+    font-size: 30px;
+}
+.keyboard {
+    
+        user-select: none;
+        width: 3em;
+        height: 1em;
+        font-size: 1.5rem;
+}
+.user-icon{
+
+    font-size: 1.5rem;
+}
+.App{
+    background-color: black;
+    color:white;
+    margin-top:100px;
+    width:70vw;
+    margin-inline: auto;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    margin: 5% auto 0px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+
+
+
+.row-1{
+    margin-top: 2rem;
+
+    font-size: 1.5rem;
+    display: flex;
+    font-size: 1 rem;
+ 
+    justify-content: space-between;
+    align-items:center;
+
+
 }
 
-.App-link {
-  color: #61dafb;
+.row-1 button{
+    background:white;
+    padding: 5px;
+    margin: 0.2rem;
+    color:black;
+    border: none;
+    width: 40px;
+    border-radius: 10px;
+
+
+}
+.text-box {
+  
+    max-width: 1000px;
+    position: fixed;
+    top: 35%;
+    left: 17%;
+    line-height: 2rem;
+  
+}
+code{
+   font-weight: 600;
+  
+}
+.words{
+    margin:5px;
+    padding-right:2px;
+    font-size:24px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+/* --------bottom button------ */
+.btn-container {
+    position: fixed;
+    left: 40%;
+    bottom: 10%;
+}
+.bottom-btn {
+    background:white;
+    padding: 5px;
+    margin: 0.2rem;
+    color:black;
+    border: none;
+    width: 40px;
+    border-radius: 10px;
+}
+.bottom-span {
+    font-size: 18px;
+    padding: 10px;
+}
+
+
+/* ----------footer---- */
+
+.footer {
+    width: 1000px;
+    display: flex;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+    position: fixed;
+    bottom: 3%;
+    left: 17%;
+}
+
+
+.links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.social{
+    font-size: 1.5rem;
+    color: white;
 }
